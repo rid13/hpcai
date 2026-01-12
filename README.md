@@ -74,13 +74,13 @@ On worker node:
 
 ```bash
 ray stop
-ray start --address=172.18.20.25:6379
+ray start --address=<head ip>:6379
 ```
 
 On head node:
 
 ```bash
-python multi_node_qlearn.py --workers 2 --episodes 1000 --address 172.18.20.25:6379
+python multi_node_qlearn.py --workers 2 --episodes 1000 --address <head ip>:6379
 ```
 
 ---
